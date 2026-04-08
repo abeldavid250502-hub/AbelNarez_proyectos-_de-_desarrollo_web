@@ -1,0 +1,73 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.filaDe {
+  max-width: 80%;
+  margin: 5% 10%;
+  display: flex;
+}
+
+.columnaDe {
+  max-width: 40%;
+  display: flex;
+  margin: 1%;
+}
+
+.galeriaDe {
+  max-width: 100%;
+  padding: 1% 5%;
+}
+
+.galeriaDe img {
+  width: 80%;
+  height: auto;
+  padding: 5% 10%;
+}
+
+.descDe {
+  width: 100%;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  text-align: left;
+  padding: 5% 10%;
+}
+
+#tituloP {
+  font-weight: bold;
+}
+
+#precioD {
+  color: blue;
+  font-size: 1.2vw;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.precio-original {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 1.1vw;
+}
+
+#neza {
+  color: chartreuse;
+}
+
+.btnCompra {
+  width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  background-color: black;
+  color: #ffffff;
+  padding: 2%;
+  margin-top: 1%;
+  border: 1px solid;
+  border-radius: 3px;
+  border-style: outset;
+  letter-spacing: 0.5px;
+  text-align: center;
+}

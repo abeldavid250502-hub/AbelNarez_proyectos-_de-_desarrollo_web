@@ -1,0 +1,239 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+}
+
+.encabezado {
+    width: 100%;
+    overflow: hidden;
+}
+
+.encabezado img {
+    width: 10%;
+    float: left;
+    padding: 0%;
+}
+
+
+.encabezado h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3vw;
+    color: #ca9025;
+    margin: 1.5%;
+    padding: 1%;
+}
+
+.encabezado nav {
+    width: 100%;
+    overflow: hidden;
+    padding: 1% 2%;
+    float: left;
+    background: linear-gradient(#252cf5 0%, #020556 100%);
+
+}
+
+
+nav a {
+    margin-right: 15px;
+    text-decoration: wavy;
+    color: #fafafa;
+    
+
+}
+
+.encabezado a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5vw;
+    text-decoration: none;
+    padding: 1%;
+    float: left;
+}
+
+#inc {
+    float: right;
+}
+
+.encabezado a:hover {
+    background-color: #f5f3ed;
+    color: #000000;
+}
+
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.banner {
+    max-width: 100%;
+    margin: 2% 20%;
+
+
+}
+
+.banner img {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1%;
+
+}
+
+.fila1 {
+    max-width: 90%;
+    margin: 1% 5%;
+    padding: 4%;
+    display: flex;
+   
+}
+
+.fila2 {
+    max-width: 90%;
+    margin: 1% 5%;
+    padding: 4%;
+    display: flex;
+   
+}
+
+.columna {
+    width: 23%;
+    float: left;
+    box-shadow: 0 4px 8px;
+    padding: 1% 1%;
+    margin: 2% 5%;
+
+}
+
+.galeria {
+    max-width: 100%;
+    border: 8px;
+    border-radius: 16px;
+    padding: 10% ;
+
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding: 2% 5%;
+    
+}
+
+
+
+.detalle {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1vw;
+    text-align: center;
+    letter-spacing: 0.5px;
+    width: 100%;
+    height: auto;
+    padding: 1%;
+}
+
+.detalle #precio {
+    color: #4cfc2d;
+    font-family: fantasy;
+}
+
+.detalle p {
+    text-decoration: none;
+    color: #000000;
+}
+
+.galeria:hover {
+    background: linear-gradient(#ca9025 0%, #ab7615 100%);
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    transform: scale(1.1);
+
+}
+
+.pie table {
+    width: 100%;
+    background: linear-gradient( #020556 10%, #252cf5 100%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2vw;
+    color:#ffffff;
+    float: left;
+    text-align: center;
+    height: 220px ;
+    margin-top: 6%;
+}
+
+.novedades {
+   
+    font-size: 3vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ca9025;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.novedades p{
+    font-size: 1.5vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+    text-align: center;
+}
+
+.galeria a {
+    text-decoration: none;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  width: 50%;
+}
+
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    width: 70%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}

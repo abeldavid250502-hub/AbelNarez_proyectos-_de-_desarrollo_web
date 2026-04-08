@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.filD {
+    max-width: 80%;
+    margin: 5% 10%;
+    background: linear-gradient(#252cf5 0%, #020556 100%);
+    display:flex ;
+    border-radius: 12px;
+}
+
+.columnaD {
+    width: 40%;
+    margin: 1%;
+    float: left;
+    display: flex;
+}
+.galeriaD {
+    max-width: 100%;
+    padding: 1% 5%;
+}
+
+.galeriaD img {
+    width: 80%;
+    height: auto;
+    padding: 5% 10%;
+}
+
+.descD {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3vw;
+    letter-spacing: 0.5px;
+    text-align: left;
+    padding: 5% 10%;
+}
+
+
+#precioD {
+    color: #04f91d;
+}
+
+#letra {
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+.precio-original {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 1.1vw;
+}
+
+ #env {
+    color: rgb(255, 227, 86);
+}
+
+ .comprar {
+    width: 50%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5vw;
+    background: linear-gradient(#fdbe02 0%, #b78a03 100%);
+    padding: 2%;
+    margin-top: 1%;
+    border: 1px solid;
+    border-radius: 3px;
+    border-style: outset;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin: 0% 25%;
+    cursor: pointer;
+ }
