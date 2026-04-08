@@ -1,0 +1,45 @@
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+header nav {
+    background: #333;
+    padding: 10px;
+}
+
+header nav a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #ffd700;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 20px;
+}
+
+/* Botón de acceso al CRUD */
+a[href*="personas"] {
+    color: #4CAF50 !important;
+}
+
+a[href*="personas"]:hover {
+    color: #81e17b !important;
+}
