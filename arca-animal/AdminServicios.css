@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* ESTILOS GENERALES  */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F7F7F7;
+  color: #333;
+  display: flex;
+}
+
+/*  SIDEBAR  */
+.sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #B68CF2, #3EB489);
+  color: white;
+  height: 100vh;
+  padding: 25px 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.activo {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cerrar-sesion {
+  background-color: #E57753;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.cerrar-sesion:hover {
+  background-color: #d8603f;
+}
+
+/*  CONTENIDO PRINCIPAL  */
+.admin-panel {
+  flex: 1;
+  padding: 2rem;
+}
+
+/*  BANNER SUPERIOR  */
+.banner-servicios {
+  background: linear-gradient(90deg, #B68CF2, #3EB489);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.banner-servicios h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/*  TABLA DE SERVICIOS  */
+.tabla-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+  background-color: #3EB489;
+  color: white;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #EEE;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/*  BOTONES  */
+.btn-editar,
+.btn-eliminar {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.btn-editar {
+  background-color: #B68CF2;
+}
+
+.btn-eliminar {
+  background-color: #E57753;
+}
+
+.btn-editar:hover,
+.btn-eliminar:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/*  FORMULARIO  */
+h3 {
+  color: #3EB489;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+.formulario {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.campo input,
+.campo textarea,
+.campo select {
+  padding: 10px;
+  border: 1px solid #CCC;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.btn-accion {
+  grid-column: span 2;
+  background: linear-gradient(90deg, #B68CF2, #E57753);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-accion:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(62,180,137,0.3);
+}
+
+/*  SCROLL  */
+.admin-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.admin-panel::-webkit-scrollbar-thumb {
+  background: #B68CF2;
+  border-radius: 10px;
+}

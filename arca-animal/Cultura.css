@@ -1,0 +1,97 @@
+/* ============================================
+   PRUEBA: COLOR DE FONDO CAMBIADO PARA VERIFICAR
+============================================ */
+body {
+  background: linear-gradient(180deg, #6A5ACD, #20B2AA) !important;
+  margin: 0;
+  padding: 40px 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ============================================
+   CONTENEDOR
+============================================ */
+.contenedor {
+  max-width: 1100px;
+  margin: auto;
+  background: #ffffff;
+  padding: 45px 35px;
+  border-radius: 25px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.20);
+  animation: fadeIn 0.6s ease;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================
+   ENCABEZADOS
+============================================ */
+
+.encabezado h1 {
+  font-size: 3rem !important;
+  color: #2E8B57 !important;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+}
+
+.encabezado p {
+  font-size: 1.3rem !important;
+  color: #444;
+  font-weight: 500;
+}
+
+/* ============================================
+   TARJETAS
+============================================ */
+.tarjeta {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 22px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: all 0.35s ease;
+  line-height: 1.8;
+}
+
+.tarjeta:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.tarjeta h2 {
+  font-size: 1.9rem !important;
+  color: #7B68EE !important;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.tarjeta p, 
+.tarjeta ul li {
+  font-size: 1.2rem !important;
+  color: #333 !important;
+  text-align: justify;
+  font-weight: 400;
+}
+
+/* ============================================
+   BOTONES
+============================================ */
+.btn-volver {
+  padding: 14px 28px;
+  background: #2E8B57 !important;
+  color: #fff;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-volver:hover {
+  background: #3CB371 !important;
+  transform: scale(1.05);
+}

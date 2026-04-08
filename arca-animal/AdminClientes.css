@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* ====================== RESET ====================== */
+* {
+  box-sizing: border-box;
+}
+
+/* ====================== GENERAL ====================== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F7F7F7;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+/* ====================== SIDEBAR ====================== */
+.sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #B68CF2, #3EB489);
+  color: white;
+  padding: 25px 20px;
+  min-height: 100vh;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar ul {
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  display: block;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.activo {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cerrar-sesion {
+  margin-top: 40px;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #E57753;
+  font-weight: bold;
+  color: white;
+}
+
+/* ====================== LOGO ====================== */
+.logo-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-img {
+  width: 120px;
+  border-radius: 15px;
+  background: white;
+  padding: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ====================== MAIN ====================== */
+.main {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+/* ====================== BANNER GENERAL ====================== */
+.banner-general {
+  background: linear-gradient(90deg, #B68CF2, #3EB489);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* ====================== SECTIONS ====================== */
+.section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+}
+
+/* ====================== TABLA ====================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #3EB489;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+/* ====================== BOTONES TABLA ====================== */
+.btn-editar,
+.btn-eliminar {
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+  display: inline-block;
+}
+
+.btn-editar {
+  background-color: #B68CF2;
+}
+
+.btn-eliminar {
+  background-color: #E57753;
+}
+
+.btn-editar:hover,
+.btn-eliminar:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* ====================== INPUTS ====================== */
+.input-estilo {
+  width: 250px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: white;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  font-size: 15px;
+}
+
+/* ======================
+   BOTONES PRINCIPALES
+   ====================== */
+
+/* 🔍 BUSCAR — MORADO */
+.btn-buscar {
+  background-color: #B68CF2;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  transition: 0.2s;
+}
+
+.btn-buscar:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* ↩ REGRESAR — NARANJA */
+.btn-regresar {
+  background-color: #E57753;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  transition: 0.2s;
+}
+
+.btn-regresar:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* ➕ AGREGAR CLIENTE — NARANJA */
+.btn-agregar {
+  background-color: #E57753;
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: 0.2s;
+  margin-top: 15px;
+}
+
+.btn-agregar:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* ====================== FORMULARIO ====================== */
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.campo label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* ====================== RESPONSIVE ====================== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+  .input-estilo {
+    width: 100%;
+  }
+}

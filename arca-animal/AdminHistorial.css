@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F7F7F7;
+  color: #333;
+  display: flex;
+}
+
+/* MENÚ LATERAL  */
+.sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #B68CF2, #3EB489);
+  color: white;
+  height: 100vh;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.activo {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar ul li a i {
+  margin-right: 10px;
+}
+
+/* CONTENIDO PRINCIPAL  */
+.admin-panel {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Banner superior */
+.banner-empleados {
+  background: linear-gradient(90deg, #B68CF2, #3EB489);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banner-empleados h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Secciones */
+.form-section, .tabla-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 1.5rem;
+}
+
+.formulario .campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, textarea, select {
+  padding: 10px;
+  border: 1px solid #CCC;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.btn-accion {
+  background: linear-gradient(90deg, #B68CF2, #E57753);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-accion:hover {
+  transform: scale(1.05);
+}
+
+/* Tabla */
+.tabla-empleados {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-empleados th, .tabla-empleados td {
+  padding: 12px;
+  border-bottom: 1px solid #EEE;
+  text-align: left;
+}
+
+.tabla-empleados th {
+  background: #3EB489;
+  color: white;
+}
+
+.btn-editar, .btn-eliminar {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-editar {
+  background-color: #B68CF2;
+}
+
+.btn-eliminar {
+  background-color: #E57753;
+}
+
+.btn-editar:hover, .btn-eliminar:hover {
+  opacity: 0.8;
+}
+
+/* Botón salir */
+.btn-salir-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-salir {
+  background-color: #3EB489;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-salir:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(62,180,137,0.3);
+}
